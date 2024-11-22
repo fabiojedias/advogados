@@ -47,7 +47,7 @@ const ServicesSection = () => {
   };
 
   return (
-    <section className="py-20 px-4 ">
+    <section className="py-20 px-4 bg-gray-200 ">
       <motion.div 
         className="max-w-6xl mx-auto"
         variants={containerVariants}
