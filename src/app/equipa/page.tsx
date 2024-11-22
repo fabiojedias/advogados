@@ -3,6 +3,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import Image from 'next/image'
 
 const lawyers = [
   {
@@ -60,9 +61,10 @@ const LawyerTeamPage: React.FC = () => {
               className="bg-white shadow-lg rounded-xl overflow-hidden cursor-pointer transition-all"
             >
               <div className="p-4 md:p-6 text-center">
-                <img 
+                <Image
                   src={lawyer.avatar} 
                   alt={lawyer.name} 
+                  width={800} height={800}
                   className="w-24 h-24 md:w-48 md:h-48 rounded-full mx-auto mb-2 md:mb-4 object-cover object-top"
                 />
                 <h2 className="text-base md:text-xl font-semibold text-gray-800">{lawyer.name}</h2>

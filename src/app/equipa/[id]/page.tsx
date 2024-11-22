@@ -5,7 +5,7 @@ import { useParams } from 'next/navigation';
 import { motion } from 'framer-motion';
 import { FaFacebook, FaLinkedin, FaTwitter, FaEnvelope, FaArrowLeft, FaBriefcase  } from 'react-icons/fa';
 import Link from 'next/link';
-
+import Image from 'next/image'
 const lawyers = [
     {
       id: "antonio-silva",
@@ -118,10 +118,12 @@ const LawyerDetailsPage = () => {
             animate={{ x: 0, opacity: 1 }}
             className="md:col-span-1 text-center"
           >
-            <img 
+            <Image
               src={lawyer.avatar} 
               alt={lawyer.name} 
               className="w-64 h-64 mx-auto rounded-full object-cover object-top shadow-lg"
+              width={800}
+              height={800}
             />
             <h1 className="text-3xl font-bold mt-6 text-gray-800">{lawyer.name}</h1>
             <p className="text-xl text-gray-600">{lawyer.title}</p>
