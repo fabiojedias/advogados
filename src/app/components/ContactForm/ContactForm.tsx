@@ -3,7 +3,7 @@
 import React, { useState } from 'react'
 import { motion } from 'framer-motion'
 import { toast, Toaster } from 'react-hot-toast'
-import {Send} from 'lucide-react';
+import { Send } from 'lucide-react'
 
 interface ContactFormData {
   name: string
@@ -30,7 +30,7 @@ export default function ContactForm() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    
+
     if (isSubmitting) return
 
     setIsSubmitting(true)
@@ -56,7 +56,8 @@ export default function ContactForm() {
       } else {
         toast.error('Erro ao enviar mensagem. Tente novamente.')
       }
-    } catch (error) {
+    } catch (err) {
+      console.error('Error occurred while sending the message:', err) // Log the error
       toast.error('Erro de conexão. Tente novamente.')
     } finally {
       setIsSubmitting(false)
@@ -66,14 +67,15 @@ export default function ContactForm() {
   return (
     <div className="w-full h-full mx-auto p-6 bg-white rounded-lg shadow-md">
       <Toaster position="bottom-right" />
-      <motion.form 
+      <motion.form
         onSubmit={handleSubmit}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5 }}
         className="space-y-4"
       >
-        <h2 className='text-2xl text-gray-900 text-center font-semibold mb-6'>Estamos Aqui para Ajudar!</h2>
+        <h2 className="text-2xl text-gray-900 text-center font-semibold mb-6">Estamos Aqui para Ajudar!</h2>
+        
         <motion.input
           type="text"
           name="name"
@@ -84,6 +86,7 @@ export default function ContactForm() {
           whileFocus={{ scale: 1.02 }}
           className="w-full p-2 border rounded"
         />
+        
         <motion.input
           type="email"
           name="email"
@@ -94,6 +97,7 @@ export default function ContactForm() {
           whileFocus={{ scale: 1.02 }}
           className="w-full p-2 border rounded"
         />
+        
         <motion.input
           type="tel"
           name="phone"
@@ -102,6 +106,7 @@ export default function ContactForm() {
           placeholder="Telefone"
           className="w-full p-2 border rounded"
         />
+        
         <motion.input
           type="text"
           name="subject"
@@ -112,6 +117,7 @@ export default function ContactForm() {
           whileFocus={{ scale: 1.02 }}
           className="w-full p-2 border rounded"
         />
+        
         <motion.textarea
           name="message"
           value={formData.message}
@@ -121,16 +127,16 @@ export default function ContactForm() {
           whileFocus={{ scale: 1.02 }}
           className="w-full p-2 border rounded h-32"
         />
+        
         <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                type="submit"
-                className="w-full bg-gray-900 text-white py-3 rounded-lg flex items-center justify-center space-x-2 hover:bg-blue-700 transition-colors"
-              >
-                <Send className="mr-2" />
-                Enviar Mensagem
-              </motion.button>
-
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+          type="submit"
+          className="w-full bg-gray-900 text-white py-3 rounded-lg flex items-center justify-center space-x-2 hover:bg-blue-700 transition-colors"
+        >
+          <Send className="mr-2" />
+          Enviar Mensagem
+        </motion.button>
         
       </motion.form>
     </div>

@@ -1,4 +1,4 @@
-import Image from "next/image";
+
 import Services from "./sections/Services/Services";
 import Hero from "./sections/Hero/Hero"
 import Team from "./sections/Team/Team"

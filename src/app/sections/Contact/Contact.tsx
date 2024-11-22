@@ -2,7 +2,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import ContactForm from '../../components/ContactForm/ContactForm';
-import { MapPin, Phone, Mail } from 'lucide-react';
 
 const Contact = () => {
   return (

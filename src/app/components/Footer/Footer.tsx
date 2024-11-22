@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
-import { BiSolidHome,BiEnvelope, BiSolidUserCircle, BiSolidBriefcaseAlt2, BiSolidGroup, BiSolidBookContent, BiSolidPhone } from 'react-icons/bi';
+import { BiSolidHome,BiEnvelope, BiSolidUserCircle, BiSolidBriefcaseAlt2, BiSolidGroup } from 'react-icons/bi';
 import { BsTelephone, BsEnvelopeFill, BsPinMapFill } from 'react-icons/bs';
 import Link from 'next/link';
 

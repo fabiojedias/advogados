@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-
+import Image from 'next/image'
 const Hero = () => {
   const slides = [
     {
@@ -85,10 +85,12 @@ const Hero = () => {
         >
           {/* Background Image with Overlay */}
           <div className="relative w-full h-full bg-gray-900">
-            <img
+            <Image
               src={slides[currentSlide].image}
               alt="Hero background"
               className="w-full h-full object-cover"
+              width={1920}
+              height={1080}
             />
             <div className="absolute inset-0 bg-black/70" />
           </div>
