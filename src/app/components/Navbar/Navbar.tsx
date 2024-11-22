@@ -30,7 +30,7 @@ const Navbar = () => {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <div className="w-full bg-gray-900 shadow-md fixed top-0 left-0 z-40">
+    <div className="w-full bg-gray-900 shadow-md fixed top-0 left-0 z-[999999]">
       <div className="max-w-8xl mx-auto p-3">
         <div className="flex justify-between items-center h-16">
           {/* Logo Column */}
