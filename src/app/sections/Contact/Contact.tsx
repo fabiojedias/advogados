@@ -5,7 +5,7 @@ import ContactForm from '../../components/ContactForm/ContactForm';
 import Image from 'next/image'
 const Contact = () => {
   return (
-    <section className="flex flex-col md:flex-row min-h-screen  p-8 gap-8">
+    <section className="flex flex-col md:flex-row min-h-screen  py-24 px-4 gap-8">
       <motion.div 
         initial={{ opacity: 0, x: -50 }}
         animate={{ opacity: 1, x: 0 }}
