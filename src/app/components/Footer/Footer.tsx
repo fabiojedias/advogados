@@ -25,7 +25,7 @@ const Footer = () => {
             </p>
             
             {/* Redes Sociais */}
-            <div className="flex justify-center md:justify-start space-x-4 mt-6">
+            <div className="flex  justify-center items-center md:justify-start md:items-start space-x-4 mt-6">
               <a href="#" className="hover:text-white transition-colors">
                 <FaFacebookF className="w-6 h-6" />
               </a>
@@ -39,7 +39,7 @@ const Footer = () => {
           </div>
           
           {/* Coluna do Meio - Contactos */}
-          <div className="space-y-4 w-64 flex-col justify-center md:justify-start">
+          <div className="space-y-4 w-64 flex flex-col justify-center items-center md:justify-start md:items-start">
             <h3 className="text-lg font-semibold text-white mb-4">Contactos</h3>
             
             <div className="space-y-4">
@@ -67,7 +67,7 @@ const Footer = () => {
           </div>
           
           {/* Coluna da Direita - Links de Navegação */}
-          <div className="w-64 flex-col justify-center md:justify-start">
+          <div className="w-64 flex flex-col justify-center items-center md:justify-start md:items-start">
             <h3 className="text-lg font-semibold text-white mb-4">Links Úteis</h3>
             
             <nav className="space-y-3">
