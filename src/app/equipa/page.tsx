@@ -52,7 +52,7 @@ const LawyerTeamPage: React.FC = () => {
         </motion.h1>
       </motion.section>
       
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 p-6">
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-8 p-6">
         {lawyers.map((lawyer) => (
           <Link href={`/equipa/${lawyer.id}`} key={lawyer.id}>
             <motion.div

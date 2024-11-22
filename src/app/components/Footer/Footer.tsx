@@ -16,7 +16,7 @@ const Footer = () => {
           {/* Coluna da Esquerda - Logo e Redes Sociais */}
           <div className="space-y-6 w-64">
             <div>
-              {/* Substitua pelo seu logo */}
+              
               <h2 className="text-2xl font-bold text-white">Silveira & Associados</h2>
             </div>
             
@@ -25,7 +25,7 @@ const Footer = () => {
             </p>
             
             {/* Redes Sociais */}
-            <div className="flex space-x-4 mt-6">
+            <div className="flex justify-center md:justify-start space-x-4 mt-6">
               <a href="#" className="hover:text-white transition-colors">
                 <FaFacebookF className="w-6 h-6" />
               </a>
@@ -39,7 +39,7 @@ const Footer = () => {
           </div>
           
           {/* Coluna do Meio - Contactos */}
-          <div className="space-y-4 w-64">
+          <div className="space-y-4 w-64 flex-col justify-center md:justify-start">
             <h3 className="text-lg font-semibold text-white mb-4">Contactos</h3>
             
             <div className="space-y-4">
@@ -55,7 +55,7 @@ const Footer = () => {
                 </a>
               </div>
               
-              <div className="flex items-start space-x-3">
+              <div className="flex items-start space-x-3 ">
                 <BsPinMapFill className="w-5 h-5 text-blue-400 flex-shrink-0 mt-1" />
                 <span>
                   Avenida da Liberdade, 123<br />
@@ -67,7 +67,7 @@ const Footer = () => {
           </div>
           
           {/* Coluna da Direita - Links de Navegação */}
-          <div className="w-64">
+          <div className="w-64 flex-col justify-center md:justify-start">
             <h3 className="text-lg font-semibold text-white mb-4">Links Úteis</h3>
             
             <nav className="space-y-3">
