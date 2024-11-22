@@ -119,7 +119,7 @@ const ContactPage: React.FC = () => {
                     required
                     value={formData.name}
                     onChange={handleInputChange}
-                    className="w-full p-3 pl-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    className="w-full p-3 pl-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-900"
                     placeholder="Digite seu nome"
                   />
                 </div>
@@ -138,7 +138,7 @@ const ContactPage: React.FC = () => {
                     required
                     value={formData.email}
                     onChange={handleInputChange}
-                    className="w-full p-3 pl-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    className="w-full p-3 pl-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-900"
                     placeholder="Digite seu email"
                   />
                 </div>
@@ -157,7 +157,7 @@ const ContactPage: React.FC = () => {
                     value={formData.message}
                     onChange={handleInputChange}
                     rows={4}
-                    className="w-full p-3 pl-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    className="w-full p-3 pl-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-900"
                     placeholder="Digite sua mensagem"
                   />
                 </div>
