@@ -26,7 +26,7 @@ const Cta = () => {
 
   return (
     <motion.section 
-      className="bg-slate-200 py-24 px-4"
+      className="bg-gray-200/40 py-24 px-4"
       initial="hidden"
       animate="visible"
       variants={containerVariants}
