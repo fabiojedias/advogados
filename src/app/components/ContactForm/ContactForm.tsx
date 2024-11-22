@@ -65,7 +65,7 @@ export default function ContactForm() {
   }
 
   return (
-    <div className="w-full h-full mx-auto p-6 bg-white rounded-lg shadow-md">
+    <div className="w-full h-full mx-auto py-16 px-6 bg-white rounded-lg shadow-md">
       <Toaster position="bottom-right" />
       <motion.form
         onSubmit={handleSubmit}
@@ -132,7 +132,7 @@ export default function ContactForm() {
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
           type="submit"
-          className="w-full bg-gray-900 text-white py-3 rounded-lg flex items-center justify-center space-x-2 hover:bg-blue-700 transition-colors"
+          className="w-full bg-gray-900 text-white py-3 rounded-lg flex items-center justify-center space-x-2 hover:bg-gray-700 transition-colors"
         >
           <Send className="mr-2" />
           Enviar Mensagem
