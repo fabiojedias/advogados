@@ -65,7 +65,7 @@ const LawyerTeamPage: React.FC = () => {
                   src={lawyer.avatar} 
                   alt={lawyer.name} 
                   width={800} height={800}
-                  className="w-24 h-24 md:w-48 md:h-48 rounded-full mx-auto mb-2 md:mb-4 object-cover object-top"
+                  className="w-48 h-48 rounded-full mx-auto mb-2 md:mb-4 object-cover object-top"
                 />
                 <h2 className="text-base md:text-xl font-semibold text-gray-800">{lawyer.name}</h2>
                 <p className="text-xs md:text-sm text-gray-500">{lawyer.title}</p>
